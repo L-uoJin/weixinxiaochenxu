@@ -1,0 +1,31 @@
+<!-- 导航-->
+<view class='nav'>
+    <view class='nav_top' ><text id='0' class="{{currentTab==0?'select':'normal'}}" bindtap='switchNav'>绞肉机  </text></view>
+    <view class='nav_top' ><text id='1' class="{{currentTab==1?'select':'normal'}}" bindtap='switchNav'>破壁机</text></view>
+    <view class='nav_top'> <text id='2' class="{{currentTab==2?'select':'normal'}}" bindtap='switchNav'>榨汁机</text></view>
+    <view class='nav_top' ><text id='3' class="{{currentTab==3?'select':'normal'}}" bindtap='switchNav'>配件</text></view>
+</view>
+<!-- 选择-->
+<view class='choise'>
+    <view class='zonghe'>综合</view>
+     <view class='xiaoliang'>销量</view>
+      <view class='jiage'>价格<image src='../image/product/1.png' class='image1'></image>
+             <image src='../image/product/2.png' class='image2'></image>
+      </view>
+</view>
+
+<!--chanpin-->
+<view class='{{currentTab==0?"product_display":"none"}}'>
+ <block wx:for="{{display_image}}">
+  <view class='product'  bindtap='loadproduct' id='{{index}}'>
+     <view class='product_left'><image src='{{item.product_image}}' class='image3'></image></view>
+     <view class='product_right'>
+          <view class='product_text'>{{item.describe}}</view>
+          <view class='right_mid'><image src='{{item.image1}}' class='image4'></image>
+                <image src='{{item.image2}}' class='image5'></image></view>
+          <view class='product_price'><text style='font-size:22rpx;color:rgbrgb(241,6,55);'>￥</text>
+                 {{item.product_price}}</view>
+     </view>
+   </view>
+ </block>
+</view>

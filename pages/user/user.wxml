@@ -1,0 +1,63 @@
+<view>
+  <view class='top' style='background-image:url(../image/other/2.png)'>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"
+  class="login" > 登录 </button>
+        <image bindtap="bindViewTap" class="imagesize" src="{{userInfo.avatarUrl}}" ></image>
+        <view ><text class='text1'>{{userInfo.nickName}}</text></view>
+  </view>
+  <view class='mid_top'>
+       <view ><text class='text2'>我的订单</text></view>
+       <view bindtap='dingdanTap'> <image src='../image/wode/右拷贝@2x.png'  style='width:48rpx;height:48rpx;                        padding-right:48rpx;'></image></view>
+  </view>
+  <view class='mid_mid'>
+     <view>
+        <view><image src='../image/wode/形状7@2x.png ' style='width:48rpx;height:48rpx;'></image></view>
+        <view class='text3'>待付款</view>
+     </view> 
+      <view>
+        <view><image src='../image/wode/形状6@2x.png ' style='width:48rpx;height:48rpx;'></image></view>
+        <view  class='text3'>待发货</view>
+     </view> 
+      <view>
+        <view><image src='../image/wode/形状8@2x.png ' style='width:48rpx;height:48rpx;'></image></view>
+        <view  class='text3'>已付款</view>
+     </view> 
+      <view>
+        <view><image src='../image/wode/形状10@2x.png ' style='width:48rpx;height:48rpx;'></image></view>
+        <view style='padding-right: 45rpx;'  class='text3'>售后服务</view>
+     </view> 
+  </view>
+
+    <view class='mid_bootom'>
+      <view class='mid_bo_hang'>
+          <view class='mid_bo_view'><image src='../image/wode/形状7@2x.png ' 
+          style='width:48rpx;height:48rpx;'></image>
+          <text class='text4'>优惠券</text></view>
+          <view> <image src='../image/wode/右拷贝@2x.png'  style='width:48rpx;height:48rpx;     padding-right:48rpx;' bindtap='youhuijuanTap'></image></view>
+      </view> 
+      <view class='mid_bo_hang' >
+        <view class='mid_bo_view'><image src='../image/wode/形状6@2x.png ' 
+              style='width:48rpx;  height:48rpx;'></image>
+        <text  class='text4'>每日签到</text>  </view> 
+        <view> <image src='../image/wode/右拷贝@2x.png'  style='width:48rpx;height:48rpx;padding-right:48rpx;' bindtap='qiandaoTap'></image></view>
+      </view> 
+      <view class='mid_bo_hang'>
+        <view class='mid_bo_view'><image src='../image/wode/形状8@2x.png ' 
+               style='width:48rpx;height:48rpx;'></image>
+        <text class='text4'>积分商城</text></view>
+        <view> <image src='../image/wode/右拷贝@2x.png'  style='width:48rpx;height:48rpx;padding-right:48rpx;' ></image></view>
+       </view> 
+       <view class='mid_bo_hang'>
+        <view class='mid_bo_view'><image src='../image/wode/形状14@2x.png '
+               style='width:48rpx;height:48rpx;'></image>
+        <text class='text4'>联系客服</text>  </view>
+        <view> <image src='../image/wode/右拷贝@2x.png'  style='width:48rpx;height:48rpx;   padding-right:48rpx;'  ></image></view>
+     </view> 
+      <view class='mid_bo_hang'>
+        <view class='mid_bo_view'><image src='../image/wode/形状1@2x.png ' 
+              style='width:48rpx;height:48rpx;'></image>
+              <text class='text4'>我的收藏</text>  </view>
+            <view> <image src='../image/wode/右拷贝@2x.png' style='width:48rpx;height:48rpx;padding-right:48rpx;'></image></view>
+     </view> 
+    </view>
+</view>

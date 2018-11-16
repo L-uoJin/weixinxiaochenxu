@@ -1,0 +1,63 @@
+<!--pages/qiandao/qiandao.wxml-->
+<view style="background-image:url(../image/qiandao/组2@2x.png)"  class='main-top'>
+  <text class='text1'>{{jifen}}</text>
+  <text class='jifen'>我的积分</text>
+</view>
+
+<view class='main-2'>
+<image src='../image/qiandao/图层1@2x.png' class='image1'></image><text class='text2'>前往积分商城</text>
+</view>
+
+<view class='main-3'>
+   <view class='main3-1'>
+ <text class='main3_text1'>今日已签到</text><text class='main3_text2'>+{{jifen1}}  </text><text class='main3_text3'>!</text><text class='main3_tex1'>连续签到</text><text class='main3_text2'>{{day}}</text><text class='main3_text1'>天</text>
+   </view>
+  <view class='main3-2'>
+  <view style='margin-right:20rpx;'>
+      <view class='main3-2-image1' id='0'>
+           <image class='main3-img1' src="{{tap==true?img1:img2}}"></image>
+           <text class="tap==false?'main3_text4':'main3_text5'">+5</text>
+      </view>
+      <view class='day'>1天</view>
+  </view>
+     <view style='margin-right:20rpx;'>
+        <view class='main3-2-image1' id='1'>
+            <image class='main3-img1' src="{{tap==false?img1:img2}}"></image>
+            <text class="tap==false?'main3_text4':'main3_text5'">+10</text>
+        </view>
+        <view class='day'>2天</view>
+      </view>
+      <view style='margin-right:20rpx;'>
+        <view class='main3-2-image1' id='0'>
+            <image class='main3-img1' src="{{tap==false?img1:img2}}"></image>
+            <text class="tap==false?'main3_text4':'main3_text5'">+20</text>
+        </view>
+        <view class='day'>3天</view>
+      </view>
+       <view style='margin-right:20rpx;'>
+          <view class='main3-2-image1' id='0'>
+              <image class='main3-img1' src="{{tap==false?img1:img2}}"></image>
+              <text class="tap==false?'main3_text4':'main3_text5'">+35</text>
+          </view>
+          <view class='day'>4天</view>
+      </view>
+       <view>
+          <view class='main3-2-image1' id='0'>
+              <image class='main3-img1' src="{{tap==false?img1:img2}}"></image>
+              <text  class="tap==false?'main3_text4':'main3_text5'" >+50</text>
+          </view>
+          <view class='day' style='margin-left:0rpx;'>5天及以上</view>
+        </view>
+     
+  </view>
+</view>
+
+<view class='main_bottom'>
+    <view class='bottom1'> 
+        <view class='main4_1_1'></view> <view class='main4_1_2'>签到积分规则</view> 
+        <view class='main4_1_3'></view>
+    </view>
+    <view class='bottom2'>1:签到当日的积分累加不清零</view>
+     <view class='bottom3'>2、连续签到，获得积分加速，如中断签到则从5积分重新加速</view>
+     <view class='bottom3'>3、签到获得的积分可以用来兑换商城里的礼品，礼品定期更新</view>
+</view>

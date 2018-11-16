@@ -1,0 +1,148 @@
+/* pages/dingdan/dingdan.wxss */
+.top{
+  display: flex;
+  flex-direction:  row;
+}
+
+.mid1{
+width: 100%;
+height: 80rpx;
+border-top: 2rpx solid #ebebeb;
+display: flex;
+flex-direction: row;
+}
+.mid_text1{
+width:50%;
+height: 80rpx;
+line-height: 80rpx;
+font-size: 24rpx;
+font-family: Ping-Fang-SC-Medium;
+color:rgb(25,26,26);
+text-align:  left;
+padding-left: 30rpx;
+}
+.mid_text2{
+width:50%;
+height: 80rpx;
+line-height: 80rpx;
+font-size: 24rpx;
+font-family: Ping-Fang-SC-Medium;
+color:rgb(25,26,26);
+text-align:right;
+padding-right: 30rpx;
+}
+.mid-2{
+display: flex;
+flex-direction:  row;
+margin: 30rpx 30rpx;
+}
+.image1{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right:20rpx;
+}
+.text3{
+  font-size: 24rpx;
+  color:rgb(26,26,26);
+}
+.mid-2-2{
+ margin-right:50rpx;
+}
+.mid2{
+  border-bottom: 2rpx solid #ebebeb;
+}
+.mid3_text1{
+  font-size: 24rpx;
+  color:rgb(26,26,26);
+  margin-right: 20rpx;
+  margin-left: 450rpx;
+}
+.mid3_text2{
+  font-size: 24rpx;
+  color:rgb(26,26,26);
+}
+.mid3_text3{
+  font-size: 24rpx;
+  color:rgb(2608,33,50);
+}
+.mid3-2{
+  display:  flex;
+  flex-direction:  row;
+  margin-top: 38rpx;
+  margin-bottom: 38rpx;
+}
+.mid3_img1{
+  width: 160rpx;
+  height: 54rpx;
+  margin-left: 380rpx;
+  margin-right: 20rpx;
+}
+.mid3_img2{
+  width: 160rpx;
+  height: 54rpx;
+}
+.mid3{
+  border-bottom: 16rpx solid #ebebeb;
+  margin-bottom: 36rpx;
+}
+
+.bottom-1{
+  display: flex;
+  flex-direction:  row;
+  position: relative;
+}
+.bo1{
+  width:35%;
+  height:30rpx;
+  border-bottom:1rpx solid #ebebeb;
+}
+.bo2{
+  font-size: 36rpx;
+  width:30%;
+  height:10rpx;
+   position:  absolute;
+   top:0rpx;
+   left:264rpx;
+}
+.bo3{
+  width:35%;
+  height:10rpx;
+   position:  absolute;
+   top:21rpx;
+   right:10rpx;
+   border-bottom:1rpx solid #ebebeb;
+}
+.bottom2{
+display:  flex;
+flex-direction:  row; 
+  margin-left:30rpx;
+}
+.bot{
+  width:48%;
+  height:330rpx;
+  line-height:330rpx;
+  text-align:center;
+  margin-top:48rpx;
+}
+.bottom2_text1{
+  font-size:  24rpx;
+  color: rgb(26,26,26);
+}
+.new_price{
+  font-size: 32rpx;
+  color:rgb(241,6,55);
+  margin-bottom: 20rpx;
+}
+.old_price{
+  font-size: 18rpx;
+  color:#999999;
+  text-decoration: line-through;
+}
+.bot2{
+  display: flex;
+  flex-direction:  row;
+}
+.bot_text{
+  font-size: 24rpx;
+  color: rgb(153,153,153);
+}

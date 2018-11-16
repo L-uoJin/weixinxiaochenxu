@@ -1,0 +1,47 @@
+<view class='top'>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FF0000" indicator-color="#A9A9A9">
+      <block wx:for="{{imgUrls}}" >
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+<view class='mid_1'>
+   <view ><text class='mid1_text1'>￥{{product_meg.product_price}}</text>
+   <text class='mid1_text2'>￥{{product_meg.old_price}} </text>
+   </view>
+   <view class='mid1_2'><image src='{{img}}' class='mid1_img1'></image><text class='mid1_text3'>{{product_meg.describe}}</text></view>
+</view>
+<view class='mid_2'>
+    <view class='mid2-1'>
+        <text class='mid2_text1'>运费</text> <text class='mid2_text2'>免运费</text></view>
+     <view class='mid2'>
+           <text class='mid2_text1'>选择</text> <text class='mid2_text2'>规格属性</text>
+           <image src='../image/xiangqing/右拷贝@2x.png' class='mid2_img'></image>
+           </view>
+      <view class='mid2-3'><text class='mid2_text1'>产品参数</text>
+      <image src='../image/xiangqing/右拷贝@2x.png' class='mid2_img'></image>
+      </view>
+</view>
+<view class='mid-3'>
+   <image src='{{product_meg.miaoshu_imag}}' style='width:100%;height:100%;'></image>
+</view>
+<view class='bootom'>
+  <view class='bootom-1'>
+        <image src='{{shoucang==true?bottom_img1:bottom_img}}' class='bootom-img1'
+        bindtap='scbutton'></image>
+       <view class='bottom_text1'>收藏</view>
+  </view>
+  <view class='bootom-2'>
+        <image src='{{bottom_img2}}' class='bootom-img1'  bindtap='shopcarTab' ></image>
+       <view class='bottom_text1'>购物车</view>
+  </view>
+   <view class='bootom-3'>
+       <view class='bottom_text2' bindtap='' >加入购物车</view>
+  </view>
+   <view class='bootom-4'>
+       <view class='bottom_text2'>立刻购买</view>
+  </view>
+</view>

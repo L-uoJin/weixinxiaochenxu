@@ -1,0 +1,67 @@
+<!--pages/dingdan/dingdan.wxml-->
+<view class='top'>
+    <view id="0" class="{{currentId==0?'select':'normal'}}" bindtap='selectNav'> 
+        <text>全部</text></view>
+    <view id='1' class="{{currentId==1?'select':'normal'}}" bindtap='selectNav'>
+        <text >待付款</text></view>
+    <view id='2' class="{{currentId==2?'select':'normal'}}" bindtap='selectNav'>
+        <text >待发货</text></view>
+    <view id='3' class="{{currentId==3?'select':'normal'}}" bindtap='selectNav'>
+        <text >待收货</text></view>
+</view>
+
+  <view  class='{{currentId==0?"product_display":"none"}}'>
+    <view class='mid1'><view class='mid_text1'>{{date}}</view><view class='mid_text2'>{{qingkuang}}</view></view>
+    <view class='mid2' >
+      <block wx:for="{{dfk}}">
+          <view class='mid-2'>
+              <image src='{{item.tu1}}' class='image1'></image>
+              <view class='mid-2-2'>
+                    <view class='text3'><text>{{item.describe1}}</text></view>
+                    <view> <text class='text3'>{{item.describe2}}</text></view>
+            </view>
+              
+                <view>
+                    <view class='text3'><text>{{item.price}}</text></view>
+                    <view> <text class='text3'>x{{item.number}}</text></view>
+                  </view>
+              </view>
+      </block>
+     </view>
+
+     <view class='mid3'>
+         <view>
+            <text class='mid3_text1'>共{{num}}件</text>
+            <text class='mid3_text2'>应付金额：</text>
+            <text class='mid3_text3'>{{totalprice}}</text>
+         </view>
+         <view class='mid3-2'>
+              <image src='../image/dingdan/立即付款@2x.png' class='mid3_img1'></image>
+              <image src='../image/dingdan/组3@2x.png' class='mid3_img2'></image>
+         </view>
+     </view> 
+</view>
+ <view class='bottom'>
+      <view class='bottom-1'> 
+            <view class='bo1'></view>
+             <view class='bo2'>你可能还想买</view>
+             <view class='bo3'></view>
+      </view>
+      <view  class='bottom2'>
+           <block wx:for='{{more}}'>
+              <view>
+              <view class='bot'>
+                 <image src='{{item.img}}' style='width:300rpx;height:300rpx;'></image>
+              </view>
+              <view style='width:80%;'><text class='bottom2_text1'>{{item.describe}}</text></view>
+              <view><text class='new_price'>￥{{item.newprice}}</text>
+                    <text class='old_price'>￥{{item.oldprice}}</text></view>
+                <view class='bot2'>
+                   <image src='{{item.img2}}' style='width:50rpx;height:25rpx;'> </image>
+                   <image src='{{item.img3}}' style='width:125rpx;height:25rpx;'></image>
+                  <text class='bot_text'>{{item.text}}</text>
+                </view>
+              </view>
+           </block>
+      </view>
+ </view>

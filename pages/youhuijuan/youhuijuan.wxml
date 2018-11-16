@@ -1,0 +1,23 @@
+<!--pages/youhuijuan/youhuijuan.wxml-->
+<view class='top'>
+    <view id="0" class='top_1' bindtap='selectNav'> 
+        <text class="{{currentId==0?'select':'normal'}}">未使用</text></view>
+    <view id='1' class='top_1' bindtap='selectNav'>
+        <text class="{{currentId==1?'select':'normal'}}">已使用</text></view>
+    <view id='2' class='top_1'  bindtap='selectNav'>
+        <text class="{{currentId==2?'select':'normal'}}">已过期</text></view>
+</view>
+<view class='mid' class="{{currentId==0?'':'none'}}">
+   <block wx:for="{{youhuijuan}}" >
+       <view class='mid1' >
+          <image src='{{image1}}' class='mid2'></image>
+          <text class='text1'>购满{{item.price1}}元使用</text>
+          <text class='text2'>使用时间：{{item.date}}</text>
+          <text class='text3'>￥</text>
+          <text class='text4'>{{item.price2}}</text>
+        </view>
+   </block>
+   
+    <view class='bottom'><image src='../image/other/组13@2x.png' class='bottom_img'></image>
+    </view>
+</view>

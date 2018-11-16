@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/dingdan/dingdan",
+    "pages/qiandao/qiandao",
+    "pages/product/product",
+    "pages/describe/describe",
+    "pages/shopcar/shopcar",
+    "pages/user/user",
+    "pages/youhuijuan/youhuijuan"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#06030a",
+    "navigationBarTitleText": "Box 电器",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"pages/image/tabimage/75421245@2x.png",
+        "selectedIconPath":"pages/image/tabimage/754212@2x.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品",
+        "iconPath": "pages/image/tabimage/7686@2x.png",
+        "selectedIconPath": "pages/image/tabimage/222@2x.png"
+      },{
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "pages/image/tabimage/03232@2x.png",
+        "selectedIconPath": "pages/image/tabimage/03232654654@2x.png"
+      },{
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "pages/image/tabimage/4564865456@2x.png",
+        "selectedIconPath": "pages/image/tabimage/777@2x.png"
+      }]
+  }
+}

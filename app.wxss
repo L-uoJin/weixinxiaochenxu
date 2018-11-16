@@ -1,0 +1,30 @@
+/**app.wxss**/
+.none{
+  display: none;
+}
+.select{
+color:rgb(241,6,55);
+font-size:28rpx;
+font-family:Ping-Fang-Medium;
+border-bottom:4rpx solid red;
+width:110rpx;
+height:80rpx;
+line-height:80rpx;
+text-align:center;
+margin-left:50rpx;
+
+}
+.normal{
+color:rgb(153,153,153);
+font-size:28rpx;
+font-family:Ping-Fang-Medium;
+width:110rpx;
+height:80rpx;
+line-height:80rpx;
+text-align:center;
+margin-left:50rpx;
+}
+.product_display{
+  display:  flex;
+  flex-direction:  column;
+}

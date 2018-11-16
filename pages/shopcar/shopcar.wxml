@@ -1,0 +1,30 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class='main'>
+ <block wx:for="{{goods}}">
+     <view class='top'>
+        <view  id='{{index}}'  bindtap='checkboxChange' >
+           <image src='{{item.selectd==true?image1:image2}}' class='top_1_image' ></image>                              </view>
+        <view class='top_2'><image src='{{item.tu1}}' style='width:126rpx;height:126rpx;'></image></view>
+        <view class='top_3'>
+           <view class='top_3_top'>
+          <image class='top_3_image' src='{{image3}}'></image><text class='top_3_text'>{{item.describe1}}</text>
+        </view>
+           <view class='top_3_text'>￥{{item.describe2}}</view>
+        </view> 
+    <view class='top_4'>
+         <view class='top_4_text'>￥{{item.price}}</view>
+         <view class='top_4_text1'>X{{item.number}}</view>
+    </view>
+    </view>
+</block>
+</view>
+
+<view class='bottom'>
+<view> <image src='{{selectdALL==true?image1:image2}}' class='bottom_image'></image></view>
+<view  bindtap='checkall' class='bottom_2 bottom_text1'>全选</view>
+<view class='bottom_3'><text class='bottom_text1'>总计：</text><text class='bottom_text2'>{{totalprice}}</text></view>
+<view class='bottom_5'><text class='bottom_text3'>编辑</text></view>
+<view class='bottom_4'><text class='bottom_text3'>结算</text><text class='bottom_text3'>({{num}})</text></view>
+</view>
+
+
